@@ -55,17 +55,17 @@ Before running the pipeline, you **must** configure the datasets for both the ob
 
 This step involves modifying the core MMDetection installation to recognize the pipeline's custom dataset format.
 
-1.  **Add Dataset Config:** Copy the custom configuration file `pipeline/dataset/config/coco_detection_igd.py` to the following folder in your MMDetection installation:
+1.  **Add Dataset Config:** Copy the custom configuration file `dataset/config/coco_detection_igd.py` to the following folder in your MMDetection installation:
     ```
     mmdet/configs/_base_/datasets/
     ```
-2.  **Add Dataset Class:** Copy the custom dataset class file `pipeline/dataset/config/coco.py` to the MMDetection datasets folder:
+2.  **Add Dataset Class:** Copy the custom dataset class file `dataset/config/coco.py` to the MMDetection datasets folder:
     ```
     mmdet/datasets
     ```
 3.  **Annotation Files:** Ensure your dataset annotation files are located in:
     ```
-    pipeline/dataset/igd_dataset/annotation
+    dataset/igd_dataset/annotation
     ```
 
 #### For Text Detection and Recognition (MMOCR):
